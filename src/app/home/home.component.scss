@@ -1,0 +1,167 @@
+ion-header {
+    ion-toolbar {
+        ion-icon {
+            font-size: 26px;
+            color:var(--black-100);
+            position: absolute;
+        }
+
+        ion-badge {
+            font-size: 8px;
+            border-radius: 50px;
+            color:var(--white-clr);
+            background:var(--main-bg-color);
+            position: relative;
+            margin-left: 13px;
+        }
+
+        .location-icon {
+
+            font-size: 20px;
+        }
+
+        ion-title {
+            font-size: 16px;
+            margin: 5px 0px 0px 9px;
+            color: var(--black-100);
+            font-weight: bold;
+        }
+
+        .filter-btn {
+            --border-radius: 0;
+            height: 41px;
+            width: 100%;
+            text-align: center;
+            --background: var(--main-bg-color);
+
+            ion-icon {
+                color: var(--white-clr);
+            }
+        }
+
+        ion-searchbar {
+            --border-radius: 0;
+            --background: var(--white-clr);
+            color: var(--black-100);;
+        }
+
+        .searchbar {
+            ion-col {
+                padding: 5px 0px 0px 0px;
+            }
+        }
+
+
+    }
+}
+
+.category-grid {
+    background:var(--white-clr);
+    padding: 10px 0px 10px 0px;
+}
+
+.see-all {
+    font-size: 15px;
+    color:var(--black-50);
+    padding: 4% 0% 0% 0%;
+    float: right;
+}
+
+.grid-title {
+    font-size: 17px;
+    color:var(--black-100);
+    padding: 0% 0% 0% 0%;
+    font-weight: bold;
+}
+
+.categorys {
+    background: #ffe6d0;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    padding: 2px;
+    border: 1px solid #ffd6a5;
+}
+
+
+.category-name {
+    font-size: 11px;
+    color: var(--black-100);
+    padding: 0% 0% 0% 0%;
+}
+
+.scroll {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    display: flex;
+    width: 100%;
+}
+
+.popular-product,
+.recent-product {
+    ion-card {
+        img {
+            padding: 8px;
+            height: 145px;
+        }
+
+        ion-card-header {
+            padding: 6px;
+
+            ion-title {
+                padding: 0px;
+                font-size: 14px;
+                font-weight: 600;
+                color: var(--black-100);
+            }
+        }
+
+        ion-card-content {
+            padding: 0px 0px 1px 0px;
+
+            .rating {
+                font-size: 16px;
+                color: rgb(255, 153, 0);
+            }
+
+            span {
+                font-size: 16px;
+                color:var(--black-50);
+            }
+
+            .add-btn {
+                font-size: 12px;
+                width: 60%;
+            }
+
+            .heart {
+                font-size: 22px;
+                margin-top: 5px;
+                color: var(--red);;
+            }
+        }
+    }
+}
+
+.vertical-scroll {
+    height: 300px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify;
+}
+
+ion-tabs {
+    ion-tab-bar {
+        border-top-right-radius: 22px;
+        border-top-left-radius: 22px;
+        --background: var(--white-clr);
+        border-top: 1px solid #ebebeb;
+        ion-icon {
+            color: orange;
+        }
+        ion-label{
+            color: var(--black-100);
+        }
+    }
+}

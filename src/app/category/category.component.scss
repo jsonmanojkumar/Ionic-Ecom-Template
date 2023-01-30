@@ -1,0 +1,14 @@
+ 
+.categorys {
+   ion-row{
+    ion-col{
+        ion-avatar {border: 1px solid #ffc585;
+            padding: 2px;}
+        ion-title{
+            font-size: 11px;
+            color: var(--black-100);;
+            padding: 5px 0px 5px 0px;
+        }
+    }
+   }
+}

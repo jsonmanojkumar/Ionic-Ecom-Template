@@ -1,0 +1,185 @@
+<ion-header clasa="header">
+  <ion-toolbar>
+    <ion-row style="margin-top: 12px;">
+      <ion-col size="2">
+        <ion-icon (click)="goBack()" class="back-button" name="arrow-back-outline"></ion-icon>
+      </ion-col>
+      <ion-col size="10">
+        <ion-title>My Orders</ion-title>
+      </ion-col>
+    </ion-row>
+    <ion-row >
+      <ion-col size="12">
+        <ion-segment value="completed" [scrollable]="true" color="danger" (ionChange)="segmentChanged($event)">
+          <ion-segment-button value="completed">
+            <ion-label >Completed</ion-label>
+          </ion-segment-button>
+          <ion-segment-button value="ongoing">
+            <ion-label>Ongoing</ion-label>
+          </ion-segment-button>
+        </ion-segment>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+
+ 
+ 
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+ 
+
+  <ion-grid class="completed" *ngIf="segmentValue == 'completed'">
+    <ion-card class="mar-0">
+      <ion-row>
+        <ion-col size="4">
+          <img class="center" alt="" src="../../assets/img/img4.png" />
+        </ion-col>
+        <ion-col size="8">
+          <ion-card-header>
+            <ion-card-title>Card Title mall text description for the card content.</ion-card-title>
+            <ion-card-subtitle class="price">₹3000.00</ion-card-subtitle>
+            <ion-card-subtitle class="stock">In Stock</ion-card-subtitle>
+            <ion-card-subtitle class="color">Color : Red</ion-card-subtitle>
+          </ion-card-header>
+        </ion-col>
+        <ion-col size="12">
+          <ion-card-content>
+            <ion-label>12/12/2022 10AM</ion-label>
+            <ion-badge color="success">Completed</ion-badge>
+          </ion-card-content>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+    <ion-card class="mar-0">
+      <ion-row>
+        <ion-col size="4">
+          <img class="center" alt="" src="../../assets/img/img2.png" />
+        </ion-col>
+        <ion-col size="8">
+          <ion-card-header>
+            <ion-card-title>Card Title mall text description for the card content.</ion-card-title>
+            <ion-card-subtitle class="price">₹13000.00</ion-card-subtitle>
+            <ion-card-subtitle class="stock">In Stock</ion-card-subtitle>
+            <ion-card-subtitle class="color">Color : Red</ion-card-subtitle>
+          </ion-card-header>
+        </ion-col>
+        <ion-col size="12">
+          <ion-card-content>
+            <ion-label>12/12/2022 10AM</ion-label>
+            <ion-badge color="success">Completed</ion-badge>
+          </ion-card-content>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+    <ion-card class="mar-0">
+      <ion-row>
+        <ion-col size="4">
+          <img class="center" alt="" src="../../assets/img/img1.png" />
+        </ion-col>
+        <ion-col size="8">
+          <ion-card-header>
+            <ion-card-title>Card Title mall text description for the card content.</ion-card-title>
+            <ion-card-subtitle class="price">₹13000.00</ion-card-subtitle>
+            <ion-card-subtitle class="stock">In Stock</ion-card-subtitle>
+            <ion-card-subtitle class="color">Color : Red</ion-card-subtitle>
+          </ion-card-header>
+        </ion-col>
+        <ion-col size="12">
+          <ion-card-content>
+            <ion-label>12/12/2022 10AM</ion-label>
+            <ion-badge color="success">Completed</ion-badge>
+          </ion-card-content>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+    <ion-card class="mar-0">
+      <ion-row>
+        <ion-col size="4">
+          <img class="center" alt="" src="../../assets/img/img3.png" />
+        </ion-col>
+        <ion-col size="8">
+          <ion-card-header>
+            <ion-card-title>Card Title mall text description for the card content.</ion-card-title>
+            <ion-card-subtitle class="price">₹13000.00</ion-card-subtitle>
+            <ion-card-subtitle class="stock">In Stock</ion-card-subtitle>
+            <ion-card-subtitle class="color">Color : Red</ion-card-subtitle>
+          </ion-card-header>
+        </ion-col>
+        <ion-col size="12">
+          <ion-card-content>
+            <ion-label>12/12/2022 10AM</ion-label>
+            <ion-badge color="success">Completed</ion-badge>
+          </ion-card-content>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </ion-grid>
+
+  <ion-grid class="ongoing" *ngIf="segmentValue == 'ongoing'">
+    <ion-card class="mar-0" routerLink="/track-order">
+      <ion-row>
+        <ion-col size="4">
+          <img class="center" alt="" src="../../assets/img/img4.png" />
+        </ion-col>
+        <ion-col size="8">
+          <ion-card-header>
+            <ion-card-title>Card Title mall text description for the card content.</ion-card-title>
+            <ion-card-subtitle class="price">₹3000.00</ion-card-subtitle>
+            <ion-card-subtitle class="stock">In Stock</ion-card-subtitle>
+            <ion-card-subtitle class="color">Color : Red</ion-card-subtitle>
+          </ion-card-header>
+        </ion-col>
+        <ion-col size="12">
+          <ion-card-content>
+            <ion-label>12/12/2022 10AM</ion-label>
+            <ion-badge color="warning">Ongoing</ion-badge>
+          </ion-card-content>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+    <ion-card class="mar-0" routerLink="/track-order">
+      <ion-row>
+        <ion-col size="4">
+          <img class="center" alt="" src="../../assets/img/img1.png" />
+        </ion-col>
+        <ion-col size="8">
+          <ion-card-header>
+            <ion-card-title>Card Title mall text description for the card content.</ion-card-title>
+            <ion-card-subtitle class="price">₹13000.00</ion-card-subtitle>
+            <ion-card-subtitle class="stock">In Stock</ion-card-subtitle>
+            <ion-card-subtitle class="color">Color : Red</ion-card-subtitle>
+          </ion-card-header>
+        </ion-col>
+        <ion-col size="12">
+          <ion-card-content>
+            <ion-label>12/12/2022 10AM</ion-label>
+            <ion-badge color="warning">Ongoing</ion-badge>
+          </ion-card-content>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+    <ion-card class="mar-0" routerLink="/track-order">
+      <ion-row>
+        <ion-col size="4">
+          <img class="center" alt="" src="../../assets/img/img2.png" />
+        </ion-col>
+        <ion-col size="8">
+          <ion-card-header>
+            <ion-card-title>Card Title mall text description for the card content.</ion-card-title>
+            <ion-card-subtitle class="price">₹13000.00</ion-card-subtitle>
+            <ion-card-subtitle class="stock">In Stock</ion-card-subtitle>
+            <ion-card-subtitle class="color">Color : Red</ion-card-subtitle>
+          </ion-card-header>
+        </ion-col>
+        <ion-col size="12">
+          <ion-card-content>
+            <ion-label>12/12/2022 10AM</ion-label>
+            <ion-badge color="warning">Ongoing</ion-badge>
+          </ion-card-content>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </ion-grid>
+</ion-content>

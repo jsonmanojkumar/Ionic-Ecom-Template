@@ -1,0 +1,73 @@
+.items {
+    ion-card {
+
+        ion-row {
+            .coupon-bg {
+                background: var(--gdnt-bg);
+            }
+
+            ion-col {
+                span {
+                    font-size: 30px;
+                    font-weight: 800;
+                    color: var(--white-clr);
+                    margin-top: 3px;
+                }
+
+                .off {
+                    font-size: 18px;
+                    font-weight: 800;
+                    color: var(--white-clr);
+                    margin-top: 1px;
+                }
+            }
+        }
+
+        margin-bottom: 10px;
+        border-radius: 14px;
+
+        ion-card-header {
+            padding: 5px 0px 0px 5px;
+
+            ion-card-title {
+                font-size: 11px;
+                font-weight: 500;
+                font-style: normal;
+                color: var(--black-100);
+                margin: 3px;
+            }
+
+            .price {
+                font-size: 16px;
+                font-weight: 800;
+                font-style: normal;
+                color: var(--main-bg-color);
+                border-bottom: 1px dotted var(--main-bg-color);
+                padding: 2px;
+
+                ion-badge {
+                    float: right;
+                    font-size: 12px;
+                }
+            }
+
+            .stock {
+                color: var(--green);;
+                margin: 0;
+                font-size: 12px;
+            }
+
+            .color {
+                color: var(--black-100);
+                margin: 0;
+                font-size: 12px;
+            }
+        }
+
+        ion-card-content {
+            padding: 0px 5px 0px 5px;
+
+
+        }
+    }
+}

@@ -1,0 +1,215 @@
+ion-header {
+    ion-row {
+        ion-col {
+            ion-title {
+                font-size: 18px;
+            }
+
+            ion-icon {
+                font-size: 24px;
+                color: var(--red);
+            }
+            .back-button{font-size: 24px;
+                color: var(--black-100);}
+        }
+    }
+
+}
+
+ion-slides {
+    ion-slide {
+        img {
+            height: 333px;
+        }
+    }
+}
+
+.detail {
+    background: #fff9f3;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-top: 2px solid #fff2f2;
+    ion-row {
+        ion-col {
+            .price {
+                margin: 0;
+                font-size: 20px;
+                font-weight: 700;
+                color: var(--black-100);
+            }
+
+            .discount {
+                margin: 0;
+                font-size:14px;
+                font-weight: 700;
+                color: var(--red);
+            }
+
+            .colors {
+                ion-button {
+                    border-radius: 50px;
+                    height: 30px;
+                    width: 30px;
+                    margin: 4px;
+                }
+            }
+
+            .rating {
+                color: rgb(255, 174, 0);
+                font-size: 16px;
+            }
+
+            .rating-no {
+                font-size: 12px;
+                color: var(--black-50);
+            }
+
+            .stock {
+                color: var(--green);;
+                font-size: 12px;
+            }
+
+            .pro-name {
+                font-size: 15px;
+                font-weight: 600;
+                color: var(--black-100);
+            }
+
+            .pro-desc {
+                font-size: 13px;
+                font-weight: 500;
+                color: var(--black-50);
+                font-style: normal;
+                margin: 6px;
+            }
+
+            .count-input {
+                display: flex;
+                width: 90px;
+
+                ion-input {
+                    width: 36px;
+                    border: none;
+                    background: #ff000000;
+                    color: var(--black-100);
+                    text-align: center;
+
+                }
+
+                .sc-ion-input-md-h {
+                    --padding-top: 4px;
+                    --padding-end: 0;
+                    --padding-bottom: 10px;
+                    --padding-start: 0px;
+                    font-size: inherit;
+                }
+                ion-icon{ border: 1px solid var(--main-bg-color);;
+                    padding: 4px;
+                    font-size: 14px;
+                    border-radius: 50px;
+                    box-shadow: inset 0 -3em 3em rgb(255 255 255 / 0%), 0 0 0 2px rgb(255 255 255), 2px 2px 10px rgb(241 122 0);
+                    color: var(--main-bg-color);}
+                ion-button {
+                    --border-radius: 5px;
+                    font-size: 13px;
+                    padding: 0px 0px 0px 0px;
+                    width: 50px;
+                }
+            }
+        }
+    }
+}
+
+.title {
+    color:var(--black-100);
+    padding: 0px 0px 5px 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.charges {
+    color:var(--black-100);
+    padding: 0px 0px 5px 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+ion-footer {
+    ion-row {
+        ion-col {
+            .total-price {
+                font-size: 11px;
+                color: var(--black-100);
+            }
+
+            .value {
+                color: var(--black-100);
+                font-size: 18px;
+                padding-top: 1px;
+                font-weight: 800;
+            }
+            ion-button{
+                --color:var(--white-clr);
+            }
+        }
+    }
+}
+
+.colors {
+    ion-button {
+        --background: red;
+    }
+
+    ion-radio-group {
+        ion-radio {
+            --border-radius: -8px;
+            --inner-border-radius: 14px;
+            --color: #ddd;
+            --color-checked: #ffffff;
+            /* --background: red; */
+            background: red;
+            height: 30px;
+            width: 30px;
+        }
+    }
+}
+
+.customer-reviews {
+    background: rgba(255, 255, 255, 0.788);
+
+    ion-row {
+        padding-bottom: 9px;
+
+        ion-col {
+            ion-chip{
+                ion-label{
+                    color:var(--black-100);
+                }
+            }
+            .date {
+                font-size: 11px;
+                color: var(--black-50);
+                float: right;
+            }
+
+            .rating {
+                ion-icon {
+                    color: rgb(255, 166, 0);
+                }
+
+                .veryfied {
+                    color: var(--green) !important;
+                }
+            }
+
+            .msg {
+                font-size: 12px;
+                color: var(--black-50);
+            }
+        }
+    }
+}
+
+.border-bottom {
+    border-bottom: 1px solid #dddddd;
+}

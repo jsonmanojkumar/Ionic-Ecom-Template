@@ -1,0 +1,26 @@
+ion-card {
+    ion-card-header {
+        padding: 6px;
+
+        ion-card-title {
+            color: var(--black-100);
+            padding: 4px;
+            border-bottom: 1px solid rgb(156, 156, 156);
+            font-size: 15px;
+            font-weight: 700;
+        }
+    }
+
+
+    ion-card-content {
+        p {
+            color: var(--black-100);
+        }
+
+        .time {
+            color: var(--black-100);
+            font-size: 11px;
+            float: right;
+        }
+    }
+}

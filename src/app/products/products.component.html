@@ -1,0 +1,107 @@
+<ion-header clasa="header">
+  <ion-toolbar>
+    <ion-row>
+      <ion-col size="2">
+        <ion-icon (click)="goBack()" class="back-button" name="arrow-back-outline"></ion-icon>
+      </ion-col>
+      <ion-col size="10">
+        <ion-title>Products</ion-title>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+
+  <ion-grid class="popular-product">
+    <ion-row>  
+        <ion-col size="6">
+          <ion-card class="mar-0">
+            <img routerLink="/product-detail" class="center" alt="" src="../../assets/img/img1.png" />
+            <ion-card-header>
+              <ion-title> description for the card content. Nothing more</ion-title>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-row>
+                <ion-col size="8">
+                  <ion-title class="grid-title">₹500.00</ion-title>
+                </ion-col>
+                <ion-col size="4">
+                  <ion-icon class="rating" name="star"></ion-icon> <span>5.0</span>
+                </ion-col></ion-row>
+              <ion-row>
+                <ion-col size="8">
+                  <ion-button class="center add-btn" size="small">Add</ion-button>
+                </ion-col>
+                <ion-col size="4">
+                  <ion-icon class="heart center" routerLink="/wishlist" name="heart"></ion-icon>
+                </ion-col>
+              </ion-row>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <ion-col size="6">
+          <ion-card class="mar-0">
+            <img routerLink="/product-detail" class="center" alt="" src="../../assets/img/img2.png" />
+            <ion-card-header>
+              <ion-title> description for the card content. Nothing more</ion-title>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-row>
+                <ion-col size="8">
+                  <ion-title class="grid-title">₹500.00</ion-title>
+                </ion-col>
+                <ion-col size="4">
+                  <ion-icon class="rating" name="star"></ion-icon> <span>5.0</span>
+                </ion-col></ion-row>
+                <ion-row>
+                  <ion-col size="8">
+                    <ion-button class="center add-btn" size="small">Add</ion-button>
+                  </ion-col>
+                  <ion-col size="4">
+                    <ion-icon class="heart center" routerLink="/wishlist"  name="heart"></ion-icon>
+                  </ion-col>
+                </ion-row>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size="6">
+          <ion-card class="mar-0">
+            <img class="center" alt="" src="../../assets/img/img3.png" />
+            <ion-card-header>
+              <ion-title> description for the card content. Nothing more</ion-title>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-row>
+                <ion-col size="8">
+                  <ion-title class="grid-title">₹500.00</ion-title>
+                </ion-col>
+                <ion-col size="4">
+                  <ion-icon class="rating" name="star"></ion-icon> <span>5.0</span>
+                </ion-col></ion-row>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size="6">
+          <ion-card class="mar-0">
+            <img class="center" alt="" src="../../assets/img/img1.png" />
+            <ion-card-header>
+              <ion-title> description for the card content. Nothing more</ion-title>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-row>
+                <ion-col size="8">
+                  <ion-title class="grid-title">₹500.00</ion-title>
+                </ion-col>
+                <ion-col size="4">
+                  <ion-icon class="rating" name="star"></ion-icon> <span>5.0</span>
+                </ion-col></ion-row>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      
+    </ion-row>
+
+  </ion-grid>
+
+</ion-content>

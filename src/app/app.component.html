@@ -1,0 +1,90 @@
+<ion-app>
+  <ion-split-pane contentId="main-content">
+    <ion-menu contentId="main-content" type="overlay">
+
+
+      <ion-row class="profilebar">
+        <ion-col size="3">
+          <ion-avatar class="center">
+            <img alt="" src="../assets/img/bag.png" />
+          </ion-avatar>
+        </ion-col>
+        <ion-col size="9">
+          <ion-title class="name">Manoj Kumar</ion-title>
+          <ion-title class="subname">manojkumar@gmail.com</ion-title>
+          <ion-menu-toggle auto-hide="false" class="menuWrapper">
+            <span class="edit-profile" routerLink="/profile">Edit Profile</span>
+          </ion-menu-toggle>
+        </ion-col>
+      </ion-row>
+
+      <ion-content>
+        <ion-list id="inbox-list">
+          <!-- <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
+            <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+              <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+              <ion-label>{{ p.title }}</ion-label>
+            </ion-item>
+          </ion-menu-toggle> -->
+          <ion-menu-toggle auto-hide="false" class="menuWrapper">
+            <ion-item class="label" routerLink="/home">
+              <ion-icon slot="start" name="home-outline"></ion-icon>
+              <span class="bold">Home</span>
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle auto-hide="false" class="menuWrapper">
+            <ion-item class="label" routerLink="/profile">
+              <ion-icon slot="start" name="person-outline"></ion-icon>
+              <span class="bold">Profile</span>
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle auto-hide="false" class="menuWrapper">
+            <ion-item class="label" routerLink="/orders">
+              <ion-icon slot="start" name="bag-outline"></ion-icon>
+              <span class="bold">My Orders</span>
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle auto-hide="false" class="menuWrapper">
+            <ion-item class="label" routerLink="/cart">
+              <ion-icon slot="start" name="cart-outline"></ion-icon>
+              <span class="bold">Cart</span>
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle auto-hide="false" class="menuWrapper">
+            <ion-item class="label" routerLink="/wishlist">
+              <ion-icon slot="start" name="heart-outline"></ion-icon>
+              <span class="bold">Wishlist</span>
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle auto-hide="false" class="menuWrapper">
+            <ion-item class="label" routerLink="/coupon">
+              <ion-icon slot="start" name="scale-outline"></ion-icon>
+              <span class="bold">Coupons</span>
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle auto-hide="false" class="menuWrapper">
+            <ion-item class="label" routerLink="/address">
+              <ion-icon slot="start" name="business-outline"></ion-icon>
+              <span class="bold">Address</span>
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle auto-hide="false" class="menuWrapper">
+            <ion-item class="label" routerLink="/notification">
+              <ion-icon slot="start" name="notifications-outline"></ion-icon>
+              <span class="bold">Notification</span>&nbsp;
+              <ion-badge color="warning">70</ion-badge>
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle auto-hide="false" class="menuWrapper">
+            <ion-item class="label">
+              <ion-icon slot="start" name="power-outline"></ion-icon>
+              <span class="bold">Logout</span>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

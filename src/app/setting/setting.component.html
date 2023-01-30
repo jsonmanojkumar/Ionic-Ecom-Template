@@ -1,0 +1,68 @@
+<ion-header clasa="header">
+  <ion-toolbar>
+    <ion-row>
+      <ion-col size="2">
+        <ion-icon (click)="goBack()" class="back-button" name="arrow-back-outline"></ion-icon>
+      </ion-col>
+      <ion-col size="10">
+        <ion-title>Settings</ion-title>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+ 
+  <ion-grid class="profile-nav">
+
+    <ion-row >
+      <ion-col size="2" >
+        <ion-icon class="center" name="notifications-outline"></ion-icon>
+      </ion-col>
+      <ion-col size="8">
+        <ion-label>Notification</ion-label>
+      </ion-col>
+      <ion-col size="2">
+        <ion-toggle color="warning" class="center"></ion-toggle>
+      </ion-col>
+    </ion-row>
+    <ion-row routerLink="/setting/contact-us">
+      <ion-col size="2" >
+        <ion-icon class="center" name="call-outline"></ion-icon>
+      </ion-col>
+      <ion-col size="8">
+        <ion-label>Contact Us </ion-label>
+      </ion-col>
+      <ion-col size="2">
+        <ion-icon class="center arrow" name="chevron-forward-outline"></ion-icon>
+      </ion-col>
+    </ion-row>
+    <ion-row routerLink="/setting/term-condition">
+      <ion-col size="2">
+        <ion-icon class="center" name="shield-checkmark-outline"></ion-icon>
+      </ion-col>
+      <ion-col size="8">
+        <ion-label>Term and conditions</ion-label>
+      </ion-col>
+      <ion-col size="2">
+        <ion-icon class="center arrow" name="chevron-forward-outline"></ion-icon>
+      </ion-col>
+    </ion-row>
+
+    <ion-row routerLink="/setting/pilicy">
+      <ion-col size="2">
+        <ion-icon class="center" name="cube-outline"></ion-icon>
+      </ion-col>
+      <ion-col size="8">
+        <ion-label>Privacy policy</ion-label>
+      </ion-col>
+      <ion-col size="2">
+        <ion-icon class="center arrow" name="chevron-forward-outline"></ion-icon>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+ 
+
+</ion-content>

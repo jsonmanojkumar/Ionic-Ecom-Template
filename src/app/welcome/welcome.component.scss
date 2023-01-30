@@ -1,0 +1,27 @@
+ion-grid{
+    margin-top: 10%;
+    ion-slides{
+
+        ion-slide{
+            ion-row{
+                ion-col{
+                    img{
+                        width: 70%;
+                        margin-top: 15%;
+                    }
+                    h2{
+                        font-weight: 800;
+                        color: var(--main-bg-color);
+                    }
+                    p{
+                        padding: 0% 5% 20% 5%;
+                        font-size: 14px;
+                        color: var(--black-100);
+                    }
+                }
+            }
+         
+        }
+    }
+}
+

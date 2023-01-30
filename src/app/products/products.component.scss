@@ -1,0 +1,44 @@
+
+.popular-product {
+    ion-card {
+        img {
+            padding: 8px;
+            height: 145px;
+        }
+
+        ion-card-header {
+            padding: 6px;
+
+            ion-title {
+                padding: 0px;
+                font-size: 14px;
+                font-weight: 600;
+                color: var(--black-100);
+            }
+        }
+
+        ion-card-content {
+            padding: 0px 0px 1px 0px;
+
+            .rating {
+                font-size: 16px;
+                color: rgb(255, 174, 0);
+            }
+
+            span {
+                font-size: 16px;
+                color:var(--black-100);
+            }
+
+            .add-btn {
+                font-size: 12px;
+                width:60%;
+            }
+
+            .heart {
+                font-size: 22px;
+                margin-top: 5px;
+            }
+        }
+    }
+}

@@ -1,0 +1,84 @@
+<ion-content [scrollEvents]="true">
+
+  <ion-grid>
+    <div class="login">
+      <ion-row>
+        <ion-col size="12" size-md="6" size-lg="6">
+          <img class="center" src="../../../assets/img/bag.png" alt="login banner">
+        </ion-col>
+        <ion-col size="12" size-md="6" size-lg="6">
+          <ion-title class="center">Create an Account</ion-title>
+          <p class="center">Sign up now to get started with new account</p>
+        </ion-col>
+
+        <ion-col size="12" size-md="6" size-lg="6">
+          <form>
+            <ion-row>
+              <ion-col size="12">
+                <ion-input type="text" enterkeyhint="go" placeholder="Full Name"></ion-input>
+              </ion-col>
+              <ion-col size="12">
+                <ion-input type="email" enterkeyhint="go" placeholder="Email"></ion-input>
+              </ion-col>
+              <ion-col size="12">
+                <ion-input type="number" enterkeyhint="go" placeholder="Mobile No."></ion-input>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col size="12">
+                <div class="inputs">
+                  <ion-input enterkeyhint="go" placeholder="Password" [type]="showPassword ?'text': 'password'">
+                  </ion-input>
+                  <ion-icon class="align-check eyebtn clr-black" (click)="togglepassword()"
+                    [name]="passwordtoggleicon"></ion-icon>
+                </div>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col>
+                <ion-button class="login-btn bold center">Sign Up </ion-button>
+              </ion-col>
+            </ion-row>
+          </form>
+
+          <ion-row>
+            <ion-col>
+              <p class="signup center">-------- Or Sign Up With --------</p>
+            </ion-col>
+          </ion-row>
+
+          <ion-row class="soical">
+            <ion-col>
+              <ion-row>
+                <ion-col size="3"> </ion-col>
+                <ion-col size="3">
+                  <div class="center soical-img">
+                    <img src="../../../assets/img/google.png" />
+                  </div>
+                </ion-col>
+                <ion-col size="3">
+                  <div class="center soical-img">
+                    <img src="../../../assets/img/fb.png" />
+                  </div>
+                </ion-col>
+                <ion-col size="3"> </ion-col>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col>
+              <p class="signup center">I have already an account ?
+                <a routerLink="/auth/login" class="pointer">&nbsp;Login</a>
+              </p>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </div>
+  </ion-grid>
+
+
+
+</ion-content>

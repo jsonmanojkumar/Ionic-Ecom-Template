@@ -1,0 +1,15 @@
+import { NgModule,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+import { ContactUsRoutingModule } from './contact-us-routing.module';
+import {ContactUsComponent} from './contact-us.component';
+
+@NgModule({
+  declarations: [ContactUsComponent],
+  imports: [
+    CommonModule,
+    ContactUsRoutingModule
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+})
+export class ContactUsModule { }

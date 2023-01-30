@@ -1,0 +1,100 @@
+<ion-header clasa="header" collapse="fade">
+  <ion-toolbar>
+    <ion-row>
+      <ion-col size="2">
+        <ion-icon (click)="goBack()" class="back-button" name="arrow-back-outline"></ion-icon>
+      </ion-col>
+      <ion-col size="10">
+        <ion-title>Delivery Address</ion-title>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+
+
+  <ion-grid class="address" [hidden]="!addNewForm">
+    <ion-row>
+      <ion-col size="12">
+        <ion-card *ngFor="let adrs of address;let i = index" [class.active]="selectedIndex === i"
+          (click)="setIndex(i,adrs)">
+          <ion-card-header>
+            <ion-row>
+              <ion-col size="2">
+                <ion-icon class="center" name="home"></ion-icon>
+              </ion-col>
+              <ion-col size="7">
+                <ion-card-title>{{adrs.addresType}}</ion-card-title>
+              </ion-col>
+              <ion-col size="3">
+                <ion-icon color="primary" (click)="editAddress()" name="create"></ion-icon>&nbsp;&nbsp;
+                <ion-icon color="danger" (click)="removeAddress()" name="trash"></ion-icon>
+              </ion-col>
+            </ion-row>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-card-title>{{adrs.fName}} {{adrs.lName}}</ion-card-title>
+            <ion-card-subtitle>{{adrs.address}}{{adrs.pin}}</ion-card-subtitle>
+          </ion-card-content>
+        </ion-card>
+        <br>
+        <ion-button  (click)="addNewAdd()" class="add-new center">Add New Address</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid class="add-address" [hidden]="addNewForm">
+    <form>
+      <ion-row>
+        <ion-col size="6">
+          <ion-title>First Name</ion-title>
+          <ion-input></ion-input>
+        </ion-col>
+        <ion-col size="6">
+          <ion-title>Last Name</ion-title>
+          <ion-input></ion-input>
+        </ion-col>
+        <ion-col size="12">
+          <ion-title>Mobile Number</ion-title>
+          <ion-input></ion-input>
+        </ion-col>
+        <ion-col size="12">
+          <ion-title>Email</ion-title>
+          <ion-input></ion-input>
+        </ion-col>
+        <ion-col size="12">
+          <ion-title>Address Type</ion-title>
+          <ion-select mode="ios" placeholder="Select Address Type">
+            <ion-select-option value="Office">Office</ion-select-option>
+            <ion-select-option value="Home">Home</ion-select-option>
+          </ion-select>
+        </ion-col>
+        <ion-col size="12">
+          <ion-title>City</ion-title>
+          <ion-input></ion-input>
+        </ion-col>
+        <ion-col size="12">
+          <ion-title>State</ion-title>
+          <ion-input></ion-input>
+        </ion-col>
+        <ion-col size="12">
+          <ion-title>Pin Code</ion-title>
+          <ion-input></ion-input>
+        </ion-col>
+        <ion-col size="12">
+          <ion-title>Landmark</ion-title>
+          <ion-input></ion-input>
+        </ion-col>
+        <ion-col size="12">
+          <ion-title>Address</ion-title>
+          <ion-textarea rows="5" placeholder="Type Address here"></ion-textarea>
+        </ion-col>
+        <ion-col size="12">
+          <ion-button  (click)="addAddressSubmit()" >Add Address</ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
+  </ion-grid>
+
+
+</ion-content>
